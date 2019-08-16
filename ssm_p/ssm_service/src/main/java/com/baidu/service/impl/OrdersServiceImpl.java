@@ -22,4 +22,10 @@ public class OrdersServiceImpl implements OrdersService {
         List<Orders> ordersList = ordersMapper.findAll();
         return ordersList;
     }
+
+    @Override
+    public Orders findById(String ordersId) {
+        return ordersMapper.findById(ordersId);
+    }
+
 }
