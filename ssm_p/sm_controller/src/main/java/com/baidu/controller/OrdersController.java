@@ -32,7 +32,7 @@ public class OrdersController {
         return mv;
     }
 
-    //订单详情
+    //查询订单详情
     @RequestMapping("/findById.do")
     public ModelAndView findById(@RequestParam(name = "id" ,required = true) String ordersId){
         ModelAndView mv =new ModelAndView();

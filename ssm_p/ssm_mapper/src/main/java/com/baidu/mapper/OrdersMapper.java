@@ -8,6 +8,7 @@ import org.apache.ibatis.annotations.*;
 import java.util.List;
 
 public interface OrdersMapper {
+    //查询所有订单
     @Select("select * from orders")
     @Results({
             @Result(id = true, property = "id", column = "id"),
@@ -21,6 +22,7 @@ public interface OrdersMapper {
     })
     List<Orders> findAll();
 
+    //查询订单详情
     @Select("select * from orders where id =#{orderId}")
     @Results({
             @Result(id = true,property = "id",column = "id"),

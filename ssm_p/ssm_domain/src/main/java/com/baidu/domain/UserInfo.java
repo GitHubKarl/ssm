@@ -2,6 +2,7 @@ package com.baidu.domain;
 
 import java.util.List;
 
+//数据库users表 对应的实体类
 public class UserInfo {
     private String id;
     private String username;
@@ -61,6 +62,12 @@ public class UserInfo {
     }
 
     public String getStatusStr() {
+        //状态0 未开启 1 开启
+        if(status==0){
+            statusStr="未开启";
+        }else if (status==1){
+            statusStr="开启";
+        }
         return statusStr;
     }
 

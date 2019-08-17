@@ -17,6 +17,7 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
+    //查询所有产品
     @RequestMapping("/findAll.do")
     public ModelAndView findAll(ModelAndView mv) {
         List<Product> productList = productService.findAll();
@@ -25,6 +26,7 @@ public class ProductController {
         return mv;
     }
 
+    //添加产品
     @RequestMapping("/save.do")
     public String save(Product product) throws Exception{
         productService.save(product);
