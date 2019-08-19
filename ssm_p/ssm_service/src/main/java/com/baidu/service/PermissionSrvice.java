@@ -8,4 +8,5 @@ import java.util.List;
 public interface PermissionSrvice {
     List<Permission> findAll();
     void save(Permission permission) throws Exception;
+    List<Permission> findOtherPermission(String id);
 }

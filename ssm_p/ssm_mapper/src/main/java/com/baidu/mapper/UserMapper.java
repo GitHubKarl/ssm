@@ -46,4 +46,8 @@ public interface UserMapper {
     @Insert("insert into users(email,username,password,phoneNum,status) " +
             "values(#{email},#{username},#{password},#{phoneNum},#{status})")
     void save(UserInfo userInfo) throws Exception;
+
+    //为一个用户添加角色
+    @Insert("insert into users_role(roleId,userId) values(#{roleId},#{userId})")
+    void addRoleToUser(@Param("roleId") String roleId, @Param("userId") String userId) throws Exception;
 }

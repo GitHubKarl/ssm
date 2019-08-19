@@ -69,4 +69,13 @@ public class UserServiceImpl implements UserService {
         }
         return list;
     }
+
+    //给用户分配未拥有的角色
+    public void addRoleToUser(String[] ids, String userId) throws Exception{
+
+        for (String roleId : ids) {
+            userMapper.addRoleToUser(roleId,userId);
+        }
+    }
+
 }

@@ -14,4 +14,7 @@ public interface UserService  extends UserDetailsService {
 
     //添加一个用户
     void save(UserInfo user) throws Exception;
+
+    //给用户分配未拥有的角色
+    void addRoleToUser(String[] ids,String userId) throws Exception;
 }

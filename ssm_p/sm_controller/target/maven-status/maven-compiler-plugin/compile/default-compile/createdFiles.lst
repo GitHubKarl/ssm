@@ -1,0 +1,8 @@
+com\baidu\aopSysLog\AopSysLog.class
+com\baidu\controller\OrdersController.class
+com\baidu\controller\SysLogController.class
+com\baidu\controller\UserControlller.class
+com\baidu\controller\PermissionControlller.class
+com\baidu\controller\RoleControlller.class
+com\baidu\controller\ProductController.class
+com\baidu\controller\BCryptTest.class

@@ -25,4 +25,16 @@ public interface RoleMapper {
     //添加一个角色
     @Insert("insert into role(roleName,roleDesc) values(#{roleName},#{roleDesc})")
     void save(Role role)throws Exception;
+
+    //查询当前用户没有的角色
+    @Select("select * from role where id not in( select roleId from users_role where userId=#{id})")
+    List<Role> findOtherRole(String userId);
+
+    //通过id查询一个角色
+    @Select("select * from role where id =#{id}")
+    Role findById(String id);
+
+    //给一个角色添加未拥有的资源权限
+    @Insert("insert into role_permission(roleId,permissionId) values(#{roleId},#{permissionId})")
+    void addPermissionToRole(@Param("permissionId") String id, @Param("roleId") String roleId);
 }

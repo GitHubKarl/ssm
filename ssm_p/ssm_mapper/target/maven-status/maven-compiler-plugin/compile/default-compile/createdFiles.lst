@@ -1,0 +1,8 @@
+com\baidu\mapper\UserMapper.class
+com\baidu\mapper\TravellerMapper.class
+com\baidu\mapper\PermissionMapper.class
+com\baidu\mapper\SysLogMapper.class
+com\baidu\mapper\OrdersMapper.class
+com\baidu\mapper\RoleMapper.class
+com\baidu\mapper\ProductMapper.class
+com\baidu\mapper\MemberMapper.class

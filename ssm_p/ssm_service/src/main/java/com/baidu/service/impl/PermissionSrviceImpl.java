@@ -23,4 +23,9 @@ public class PermissionSrviceImpl implements PermissionSrvice {
     public void save(Permission permission) throws Exception{
         permissionMapper.save(permission);
     }
+
+    @Override
+    public List<Permission> findOtherPermission(String id) {
+        return permissionMapper.findOtherPermission(id);
+    }
 }
