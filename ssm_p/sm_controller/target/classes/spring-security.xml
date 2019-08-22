@@ -46,7 +46,7 @@ http://www.springframework.org/schema/security/spring-security.xsd">
                 authentication-success-forward-url="/pages/main.jsp"
         />
 
-        <!-- 关闭跨域请求   为什么要关闭呢？？？？？-->
+        <!-- 关闭跨域请求   https://www.cnblogs.com/hyddd/archive/2009/04/09/1432744.html有详细的csrf解释-->
         <security:csrf disabled="true"/>
         <!-- 退出  连接到/logout.do，就自动清理账号密码信息，并且跳转到login.jsp页面-->
         <security:logout invalidate-session="true" logout-url="/logout.do" logout-success-url="/login.jsp" />

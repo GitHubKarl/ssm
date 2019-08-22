@@ -147,7 +147,7 @@
 									<tr>
 										<td><input name="ids" type="checkbox"></td>
 										<td>${syslog.id}</td>
-										<td>${syslog.visitTimeStr }</td>
+										<td>${syslog.visitTimeStr}</td>
 										<td>${syslog.username }</td>
 										<td>${syslog.ip }</td>
 										<td>${syslog.url}</td>
